@@ -3,13 +3,11 @@ import java.util.ArrayList;
 public class Graph{
     static final int INFINITE = Integer.MAX_VALUE/2;
     private int matrix[][];
-    private int size;
     public Graph (){
     }
     
     public Graph(int N){
         matrix = new int[N][N];
-        size = N;
     }
     
     public int[][] get(){

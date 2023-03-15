@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public class floyd{
     static final int INFINITE = Integer.MAX_VALUE/2;
+    private static Scanner scanner = new Scanner(System.in);
     public static void main (String[] args) throws IOException {
         Graph mygraph = new Graph();
         int enablelog = 0;
@@ -79,7 +80,6 @@ public class floyd{
     }
     
     static Graph createnewGraph(){
-        Scanner scanner = new Scanner(System.in);
         System.out.println ("Introduzca número de nodos");
         Graph graph = new Graph(scanner.nextInt());
         int aux[][] = new int [graph.size()][graph.size()];

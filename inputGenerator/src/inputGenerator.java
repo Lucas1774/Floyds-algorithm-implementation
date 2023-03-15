@@ -5,8 +5,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class inputGenerator {
+    private static Scanner scanner = new Scanner(System.in); 
     public static void main (String []args) throws java.lang.InterruptedException, IOException {
-        Scanner scanner = new Scanner(System.in); 
         System.out.println("Enter path of output file (C:\\\\Directory\\\\Subdirectory\\\\file.txt)");
         String string = scanner.nextLine(); 
         FileWriter file = new FileWriter(string);
